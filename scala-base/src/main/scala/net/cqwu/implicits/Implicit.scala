@@ -7,7 +7,8 @@ object Implicit {
   implicit def converInt2DateHelper(num: Int) = new DateHelper(num)
 
     def main(args: Array[String]): Unit = {
-      var  past = 2 days("ago")
+      //中置表达式
+      var  past = 2 days "ago"
       println(past)
     }
 
